@@ -1,0 +1,114 @@
+
+A:link {color: gray}
+A:visited, A:active {color: green}
+A:hover {text-decoration: overline; color: teal}
+	
+Body {
+	background-color: white;
+	font-family: cambria;
+	color: gray	
+	}
+
+H1 {font-size: 50pt; text-align: center}
+H2 {font-size: 25pt; text-align: center}
+H3 {font-size: 10pt; text-align: center}
+H4 {text-align: center}
+H5 {font-size: 15pt; text-align: center}
+td {text-align: center;}
+P {font-size: 10pt; font-family: monospace;}
+
+Table {
+
+	font-family: monospace; 
+	color: white; 
+	background-color: green;
+	margin: .8em;
+	border-color: darkgreen}
+
+
+Form {
+	font-family: monospace; 
+	text-align: center; 
+	color: white; 
+	
+	background-color: green}
+
+	
+	  @media screen and (max-width: 784px) {
+		
+		H1 {font-size: 45pt; text-align: center}
+		H2 {font-size: 20pt; text-align: center}
+		H3 {font-size: 11pt; text-align: center}
+		H4 {text-align: center}
+		H5 {font-size: 13pt; text-align: center}
+		td {text-align: center;}
+		P {font-size: 11pt; font-family: monospace; text-align: left}
+		Table {
+			/*lmao getting the right percent is so hard here, there's exactly 2 pixels where it looks janky, hope nobody has a 401-402 pxl screen*/
+			width: 67%; 
+			font-family: monospace; 
+			color: white; 
+			background-color: green;
+			margin: .8em;
+			border-color: darkgreen
+		}
+		input[type="text"] {
+			width: 65%;
+		}
+		
+		Form {
+			font-family: monospace; 
+			text-align: center; 
+			color: white; 
+			
+			background-color: green
+		}
+
+			img{
+				width: 80%;
+			  }
+
+	  }
+	  
+
+
+	  @media screen and (max-width: 400px) {
+		
+		H1 {font-size: 35pt; text-align: center}
+		H2 {font-size: 20pt; text-align: center}
+		H3 {font-size: 11pt; text-align: center}
+		H4 {text-align: center}
+		H5 {font-size: 13pt; text-align: center}
+		td {text-align: center;}
+		P {font-size: 11pt; font-family: monospace; text-align: left}
+		Table { 
+			/*these tables are going to be the death of me*/
+			width: 95%;
+			font-family: monospace; 
+			color: white; 
+			background-color: green;
+			margin: .4em;
+			border-color: darkgreen
+		}
+		/*Oh this one was funny, without this change the comment box just blasted off of the screen*/
+		input[type="text"] {
+			width: 65%;
+		}
+		
+		Form {
+			font-family: monospace; 
+			text-align: center; 
+			color: white; 
+			
+			background-color: green
+		}
+			/*I had to increase percent here to make it less stretched out, I wanted to originally set an exact value but it didn't feel right*/
+			img{
+				width: 90%;
+			  }
+
+
+
+
+
+	  }
